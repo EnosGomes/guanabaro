@@ -1,0 +1,28 @@
+<div>
+
+    <div>Criando Usuario: </div>
+    <div class="submit-form">
+        @if (!submitted) {
+        <div class="form-group">
+            <label for="title">Nome:</label>
+            <input type="text" class="form-control" id="title" required [(ngModel)]="usuario.nomeUser" name="title" />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Email:</label>
+            <input class="form-control" id="description" required [(ngModel)]="usuario.emailUser" name="description" />
+        </div>
+        <div class="form-group">
+            <label for="description">Senha:</label>
+            <input type="password" class="form-control" id="description" required [(ngModel)]="usuario.senhaUser" name="description" />
+        </div>
+        <div class="form-group btn-opcoes">
+            <label for="description">Cpf:</label>
+            <input class="form-control" id="description" required [(ngModel)]="usuario.cpf" name="description" />
+        </div>
+
+        <button (click)="salvarUsuario()" class="btn btn-success">Salvar</button> } @else {
+        <h4>Usuario salvo com sucesso!</h4>
+        <button class="btn btn-success" (click)="novoUsuario()">Add</button> }
+    </div>
+</div>

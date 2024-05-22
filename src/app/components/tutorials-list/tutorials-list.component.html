@@ -1,0 +1,79 @@
+<div class="list row">
+    <!-- <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by title" [(ngModel)]="title" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchTitle()">
+          Search
+        </button>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="col-md-6">
+        <h4>Clientes:</h4>
+        <ul class="list-group">
+            @for (usuario of usuarios; track usuario.cpf; let i = $index) {
+            <li class="list-group-item" [class.active]="i == currentIndex" (click)="setActiveUsuario(usuario, i)">
+                {{ usuario.nomeUser }}
+            </li>
+            }
+        </ul>
+
+        <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTutorials()">
+      Remove All
+    </button>
+    </div> -->
+    <!-- <div class="col-md-6">
+        <app-tutorial-details [viewMode]="true" [currentTutorial]="currentTutorial"></app-tutorial-details>
+    </div> -->
+</div>
+
+<div class="tabela">
+
+    <h3>Usuarios:</h3>
+    <table mat-table [dataSource]="usuarios" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.nomeUser}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let element"> {{element.emailUser}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="cpf">
+            <th mat-header-cell *matHeaderCellDef> CPF </th>
+            <td mat-cell *matCellDef="let element"> {{element.cpf}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="opcoes">
+            <th mat-header-cell *matHeaderCellDef> Opcoes </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit"></mat-icon>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <br>
+
+
+</div>
+
+<!-- <div class="cards">
+    <app-card-fancy-example></app-card-fancy-example>
+    <app-card-fancy-example></app-card-fancy-example>
+</div> -->

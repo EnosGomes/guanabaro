@@ -1,0 +1,14 @@
+.list {
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+}
