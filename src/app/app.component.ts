@@ -11,9 +11,8 @@ export class AppComponent {
   
   title = 'Angular 17 Crud example';
 
-  
-
    menu?: HTMLElement | null = document.querySelector('#menu-btn');
+   
   
    navbar?: HTMLElement | null = document.querySelector('.header .navbar');
   
