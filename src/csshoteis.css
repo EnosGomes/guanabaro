@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+#reservation {
+    margin-bottom: 2em;
+}
+
+.hotel-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#hotel-details {
+    padding: 2em;
+}
+
+#hotel-details img {
+    max-width: 100%;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurante</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="design-restaurante/css/style.css">
+
+</head>
+
+<body>
+
+
+    <section class="header">
+
+        <div class="flex">
+            <a href="home.html" class="logo">Guanabaro</a>
+            <a href="#availability" class="btn">Churrascaria Sal e Brasa São Luís
+            </a>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </section>
+
+
+    <!-- imagens de hoteis  -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="box swiper-slide">
+                    <img src="design-restaurante/imagens/sal e brasa fachada.jpg" alt="">
+                    <div class="flex">
+                        <h3>Sal e Brasa</h3>
+                        <a href="#availability" class="btn">Verificar disponibilidade</a>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="design-restaurante/imagens/s.jpg" alt="">
+                    <div class="flex">
+                        <h3>Comida e bebida</h3>
+                        <a href="#reservation" class="btn">Faça uma reserva</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- reserva -->
+
+    <section class="reservation" id="reservation">
+
+        <form action="" method="post">
+            <h3>Reserva</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>Data <span>*</span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>Mesa para <span>*</span></p>
+                    <select name="adults" class="input" required>
+               <option value="1">1 pessoa</option>
+               <option value="2">2 pessoas</option>
+               <option value="3">3 pessoas</option>
+               <option value="4">4 pessoas</option>
+               <option value="5">5 pessoas</option>
+               <option value="6">6 pessoas</option>
+            </select>
+                </div>
+                <div class="box">
+                    <p>Crianças <span>*</span></p>
+                    <select name="childs" class="input" required>
+               <option value="-">0 criança</option>
+               <option value="1">1 criança</option>
+               <option value="2">2 crianças</option>
+               <option value="3">3 crianças</option>
+               <option value="4">4 crianças</option>
+               <option value="5">5 crianças</option>
+               <option value="6">6 crianças</option>
+            </select>
+                </div>
+
+                <input type="submit" value="Reserva" name="check" class="btn">
+        </form>
+
+    </section>
+
+    <!-- reserva -->
+
+    <!-- imagens -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <img src="design-restaurante/imagens/sal e brasa fachada.jpg" class="swiper-slide" alt="">
+                <img src="design-restaurante/imagens/s.jpg" class="swiper-slide" alt="">
+                <img src="design-restaurante/imagens/instalaces.jpeg" class="swiper-slide" alt="">
+                <img src="design-restaurante/imagens/buffet-variado-e-completo.jpg" class="swiper-slide" alt="">
+                <img src="design-restaurante/imagens/vista-frontal.jpg" class="swiper-slide" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!-- imagens -->
+
+    <!-- contato -->
+
+    <section class="contact" id="contact">
+
+        <div class="row">
+
+            <form action="" method="post">
+                <h3>Fale conosco</h3>
+                <input type="text" name="name" required maxlength="50" placeholder="Digite seu nome" class="box">
+                <input type="email" name="email" required maxlength="50" placeholder="Digite seu e-mail" class="box">
+                <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Digite seu número" class="box">
+                <textarea name="msg" class="box" required maxlength="1000" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+                <input type="submit" value="enviar mensagem" name="send" class="btn">
+            </form>
+
+            <div class="faq">
+                <h3 class="title">perguntas frequentes</h3>
+                <div class="box active">
+                    <h3>como cancelar?</h3>
+                    <p>Acesse sua conta: Faça login na plataforma com suas credenciais.<br> Localize o pedido: Vá até a seção de pedidos e encontre o pedido que deseja cancelar. <br> Solicite o cancelamento: Selecione a opção de cancelamento disponível para
+                        o pedido em questão. <br> Confirmação: Após solicitar o cancelamento, você receberá uma mensagem de confirmação.</p>
+                </div>
+                <div class="box">
+                    <h3>quais os métodos de pagamento?</h3>
+                    <p>Boleto Bancário: Após finalizar sua compra, você pode optar por pagar através de boleto bancário. O boleto será gerado automaticamente e poderá ser pago em qualquer banco ou via internet banking até a data de vencimento. <br> Cartões
+                        de Crédito: Aceitamos os principais cartões de crédito, como Visa, MasterCard, American Express, entre outros. Você pode parcelar sua compra em até 12 vezes sem juros, dependendo da promoção vigente. <br> Cartões de Débito: Para
+                        quem prefere pagar à vista, também aceitamos cartões de débito das principais bandeiras. <br> Pagamentos Digitais: Oferecemos também a opção de pagamento por meio de carteiras digitais e aplicativos de pagamento.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contato -->
+
+    <!-- secao review  -->
+
+    <section class="reviews" id="reviews">
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/pic-1.png" alt="">
+                    <h3>pedro</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/sandra.jpg" alt="">
+                    <h3>sandra</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/pic-3.png" alt="">
+                    <h3>lucas</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/pic-4.png" alt="">
+                    <h3>maria</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/pic-5.png" alt="">
+                    <h3>deryk</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="design-restaurante/imagens/pic-6.jpg" alt="">
+                    <h3>joana</h3>
+                    <p>Avaliação do Sal e brasa <br> ⭐⭐⭐⭐</p>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!-- secao review  -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="design-restaurante/js/script.js"></script>
+
+</body>
+
+</html>

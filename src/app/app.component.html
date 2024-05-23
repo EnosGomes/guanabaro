@@ -1,33 +1,140 @@
-<div>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Guanabaro</a>
-        <div class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a routerLink="tutorials" class="nav-link">Minhas Reservas</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="tutorials" class="nav-link">Clientes</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="tutorials" class="nav-link">Empresas</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="add" class="nav-link">Hoteis</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="add" class="nav-link">Restaurantes</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="add" class="nav-link">Eventos</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="add" class="nav-link">Configurações</a>
-            </li>
-        </div>
+<section class="header">
+    <a href="home.html" class="logo">Guanabaro</a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="sobre.html">sobre</a>
+        <a href="hotel.html">hotéis</a>
+        <a href="carro.html">carros</a>
+        <a href="evento.html">eventos</a>
+        <a href="restaurante.html">restaurantes</a>
     </nav>
-    <div class="container mt-3">
-        <router-outlet></router-outlet>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!--home section-->
+
+<section class="home">
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(assets/imagens/turista.jpg) no-repeat;">
+                <div class="content">
+                    <span>explore, descubra, viaje</span>
+                    <h3 style="color: red;">conheça o Maranhão</h3>
+                    <a href="pacotes.html" class="btn">descubra mais</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(assets/imagens/maranhao-lencois-maranhenses-1500x938.jpg) no-repeat;">
+                <div class="content">
+                    <span style="color: black;">explore, descubra, viaje</span>
+                    <h3 style="color: black;">descubra novos lugares</h3>
+                    <a href="pacotes.html" class="btn">descubra mais</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(assets/imagens/sao.jpg) no-repeat;">
+                <div class="content">
+                    <span>explore, descubra, viaje</span>
+                    <h3>conheça o Maranhão</h3>
+                    <a href="pacotes.html" class="btn">descubra mais</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+</section>
+
+<!--servicos section-->
+
+<section class="services">
+    <h1 class="heading-title"> nossos serviços</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="assets/imagens/talheres.png" alt="">
+            <h3 onc>restaurantes</h3>
+        </div>
+
+        <div class="box">
+            <img src="assets/imagens/carro.png" alt="">
+            <h3>aluguel de carros</h3>
+        </div>
+
+        <div class="box">
+            <img src="assets/imagens/evento.png" alt="">
+            <h3>eventos</h3>
+        </div>
+
+        <div class="box">
+            <img src="assets/imagens/hotel.png" alt="">
+            <h3>hotéis</h3>
+        </div>
     </div>
 
+</section>
 
-</div>
+
+
+
+
+
+
+<!--footer section-->
+<section class="footer">
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
+            <a href="sobre.html"><i class="fas fa-angle-right"></i>sobre</a>
+            <a href="contato.html"><i class="fas fa-angle-right"></i>contato</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>perguntas</a>
+            <a href="#"><i class="fas fa-angle-right"></i>sobre nos</a>
+            <a href="#"><i class="fas fa-angle-right"></i>faq</a>
+            <a href="#"><i class="fas fa-angle-right"></i>termos de uso</a>
+        </div>
+
+        <div class="box">
+            <h3>informações de contato</h3>
+            <a href="#"><i class="fas fa-phone"></i>+00 12 3456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i>+234 234 4545-5321</a>
+            <a href="#"><i class="fas fa-envelope"></i>guanabaro</a>
+            <a href="#"><i class="fas fa-map"></i>Maranhao, Brasil</a>
+        </div>
+
+        <div class="box">
+            <h3>siga-nos</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+        </div>
+
+
+    </div>
+
+    <div class="credit"> criado por Vitor,Sabrina,Giovanna,Derykeen,Henzo e Teles | todos os direitos reservados</div>
+
+
+</section>
+
+
+
+
+
+
+<!--swiperjslink-->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>reserva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="banner">
+        <h2>RESERVE JÁ A SUA MESA!</h2>
+        <div class="card-container">
+            <div class="card-img">
+            </div>
+
+            <div class="card-content">
+                <h3>Reserva</h3>
+                <form>
+                    <div class="form-row">
+                        <select name="days">
+                                <option value = "day-select">Dia</option>
+                                <option value = "sunday">Domingo</option>
+                                <option value = "monday">Segunda</option>
+                                <option value = "tuesday">Terça</option>
+                                <option value = "wednesday">Quarta</option>
+                                <option value = "thursday">Quinta</option>
+                                <option value = "friday">Sexta</option>
+                                <option value = "saturday">Sábado</option>
+                            </select>
+
+                        <select name="hours">
+                                <option value = "hour-select">Horário</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">21: 00</option>
+                            </select>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" placeholder="Nome completo">
+                        <input type="text" placeholder="Número de celular">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="number" placeholder="Quantas pessoas?" min="1">
+                        <input type="submit" value="RESERVAR">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

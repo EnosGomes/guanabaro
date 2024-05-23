@@ -1,3 +1,308 @@
-li a:hover {
-    color: white !important;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ :root {
+    --verde1: #99E89D;
+    --verde2: #73C883;
+    --verde3: #4DA768;
+    --verde4: #26874E;
+    --verde5: #006633;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html ::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: var(--verde3);
+}
+
+.heading-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--verde3);
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background: var(--verde3);
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    box-shadow: black;
+}
+
+.btn:hover {
+    background: var(--verde4);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--verde1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--verde4);
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: black;
+}
+
+.header .navbar a:hover {
+    color: var(--verde3);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .slide .content {
+    width: 85rem;
+    display: none;
+}
+
+.home .swiper-slide-active .content {
+    display: block;
+}
+
+.home .slide .content span {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 1rem;
+    animation: fadeIn .3s linear backwards .2s;
+}
+
+.home .slide .content h3 {
+    font-size: 6vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: black;
+    padding: 1rem 0;
+    animation: fadeIn .3s linear backwards .4s;
+}
+
+.home .slide .content .btn {
+    animation: fadeIn .3s linear backwards .4s;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev {
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+    width: 7rem;
+    background: white;
+    color: black;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
+    background: var(--verde3);
+    color: white;
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.home .swiper-button-prev {
+    right: 7rem;
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    padding: 2rem 3rem;
+    text-align: center;
+    background: var(--verde3);
+    border-radius: 2rem;
+}
+
+.services .box-container .box:hover {
+    background: var(--verde4);
+}
+
+.services .box-container .box img {
+    height: 7rem;
+}
+
+.services .box-container .box h3 {
+    color: white;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+.footer {
+    background: url(/assets/imagens/background3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+
+.footer .box-container .box a i {
+    color: var(--verde3);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: solid white;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/*responsividade*/
+
+@media(max-width:1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media(max-width:700px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: var(--verde3);
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading-title {
+        font-size: 3.5rem;
+    }
 }
